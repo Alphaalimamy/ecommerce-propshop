@@ -1,8 +1,21 @@
+import { Container } from "react-bootstrap";
+import React from "react";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import HomeScreen from "./screens/HomeScreen";
+
 function App() {
   return (
-    <div className="App">
-      <h2>Welcome to Prop shop</h2>
-    </div>
+    <>
+      <Header />
+      <main className="py-3">
+        <Container>
+          <HomeScreen />
+        </Container>
+      </main>
+
+      <Footer />
+    </>
   );
 }
 
